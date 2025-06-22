@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jobs_In_Japan</title>
+
+  <!-- Favicon  -->
+  <link rel="icon" type="image/x-icon" href="src/png/favicon.png" />
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+
+<!-- Body -->
+<body class="body">
+
+  <header>
+
+    <!-- div for cursor  -->
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+    <div class="cursor-outer2" id="cursor-outer2"></div>
+    
+
+    <!-- navbar -->
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0">
+        <div class="logo-top">
+          <img src="src/png/doraemonAvater.png" alt="animation-head" id="nav-avatar"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li">
+            <a href="#home" tabindex="0">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="listing" class="navbar-tabs-li">
+            <a href="#listing" tabindex="0">
+              &#60;/Listings&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li">
+            <a href="#culture" tabindex="0">
+              &#60;/Japan&#62;
+            </a>
+          </li>
+
+          <li class="contactUs" >
+            <a href="#contactMe" tabindex="0">
+              &#60;/ContactUs&#62;
+            </a>
+          </li>
+
+          <li class="translate" >
+            <div id="google_translate_element" class="translateDiv"></div>
+          </li>
+
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+
+    </div>
+
+  </header>
+  <!-- header ends here -->
+
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" >
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="listing-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" >
+            &#60;/Listings&#62;
+          </a>
+        </li>
+        <li id="japan-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#japan" tabindex="0" >
+            &#60;/Japan&#62;
+          </a>
+        </li>
+        <li id="contact-mobile-tab" class="mobile-navbar-tabs-li listing" onclick="hidemenubyli()">
+          <a href="#contactMe" tabindex="0">
+            &#60;/ContactUs&#62;
+          </a>
+        </li>
+
+        <li class="translate" >
+          <div id="google_translate_element"></div>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+
+        <article id="hello-friend">
+          <p class="jello">K</p>
+          <p class="jello">o</p>
+          <p class="jello">n</p>
+          <p class="jello">n</p>
+          <p class="jello">i</p>
+          <p class="jello">c</p>
+          <p class="jello">h</p>
+          <p class="jello">i</p>
+          <p class="jello">w</p>
+          <p class="jello">a</p>
+          &nbsp;
+          <p class="jello">W</p>
+          <p class="jello">e</p>
+          <p class="jello">'</p>
+          <p class="jello">r</p>
+          <p class="jello">e</p>
+
+        </article>
+
+        <article id="name">
+          <p class="jello">N</p>
+          <p class="jello">i</p>
+          <p class="jello">h</p>
+          <p class="jello">o</p>
+          <p class="jello">n</p>
+          &nbsp;
+          <p class="jello">C</p>
+          <p class="jello">a</p>
+          <p class="jello">r</p>
+          <p class="jello">e</p>
+          <p class="jello">e</p>
+          <p class="jello">r</p>
+          <p class="jello">s</p>
+        </article>
+
+        <article id="work">
+          <div>
+            <p class="jello">E</p>
+            <p class="jello">x</p>
+            <p class="jello">p</p>
+            <p class="jello">l</p>
+            <p class="jello">o</p>
+            <p class="jello">r</p>
+            <p class="jello">e</p>
+          </div>
+          <div>
+            <p class="jello">y</p>
+            <p class="jello">o</p>
+            <p class="jello">u</p>
+            <p class="jello">r</p>
+          </div>
+          <div>
+            <p class="jello">w</p>
+            <p class="jello">o</p>
+            <p class="jello">r</p>
+            <p class="jello">k</p>
+          </div>
+          <div>
+            <p class="jello">o</p>
+            <p class="jello">p</p>
+            <p class="jello">p</p>
+            <p class="jello">o</p>
+            <p class="jello">r</p>
+            <p class="jello">t</p>
+            <p class="jello">u</p>
+            <p class="jello">n</p>
+            <p class="jello">i</p>
+            <p class="jello">t</p>
+            <p class="jello">i</p>
+            <p class="jello">e</p>
+            <p class="jello">s</p>
+          </div>
+          <div>
+            <p class="jello">i</p>
+            <p class="jello">n</p>
+          </div>
+          <div>
+            <p class="jello">J</p>
+            <p class="jello">a</p>
+            <p class="jello">p</p>
+            <p class="jello">a</p>
+            <p class="jello">n</p>
+          </div>
+        </article>
+
+        <p id="info-para">
+          Welcome to NihonCareers, your gateway to exciting work opportunities in Japan. At NihonCareers, we're dedicated to helping you navigate Japan's vibrant job market.<br/>
+          <br />
+          Explore diverse career options and immerse yourself in the rich culture and lifestyle of Japan.
+        </p>
+
+        <div class="contact-btn-div">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Let's Talk!</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button>
+        </div>
+        <!-- contact-btn-div -->
+
+      </div>
+
+     
+    </section>
+
+    <!-- landing page ends here -->
+
+
+    <section class="listing-section-container" id="listing" >
+      <div class="listing-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0">
+            &#60;/Job Listings&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="info-dp-section">
+          <div class="listing-info">
+            <p tabindex="0">
+              Let's Find Out What Suits Your Career
+            </p>
+            <br />
+
+          </div>
+
+          <div class="dp">
+            <img src="src/webp/dpImage.jpg" tabindex="0" aria-label="image of vinod" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="listing-section-container" id="listing">
+
+      <div class="listing-section-div">
+
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0">
+            &#60;/Listings&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="listing-boxes-div">
+
+          <div class="listing-box-wrapper">
+            <div class="listing-box lisitng-box2" id="listing-box2">
+              <div class="info-div">
+                <article class="listingHeading">Front-End Developer</article>
+                <p class="listingDescription">
+                    Be a Frontend Developer in XYZ company and earn acording to your skills
+                </p>
+                <div class="listing-buttons">
+                  <a href="" target="_blank" class="cta">
+
+                    <span>Apply</span>
+
+                    <!-- arrow -->
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/frontEndImg.jpg" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="listing-box-wrapper">
+            <div class="listing-box lisitng-box2" id="listing-box2">
+              <div class="info-div">
+                <article class="listingHeading">Back-End Developer</article>
+                <p class="listingDescription">
+                    Be a Backend Developer in Our Startup and show your skills with team elaboration
+                </p>
+                <div class="listing-buttons">
+                  <a href="" target="_blank" class="cta">
+
+                    <span>Apply</span>
+
+                    <!-- arrow -->
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/backEndImg.jpg" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+          
+          <!-- ---------------------- -->
+          <div class="listing-box-wrapper">
+            <div class="listing-box lisitng-box2" id="listing-box2">
+              <div class="info-div">
+                <article class="listingHeading">Technology Specialist</article>
+                <p class="listingDescription">
+                  You need to provide support services for technological systems, programs, and networks. Job is to oversee the implementation, configuration, updating, ...
+                </p>
+                <div class="listing-buttons">
+                  <a href="" target="_blank" class="cta">
+
+                    <span>Apply</span>
+
+                    <!-- arrow -->
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/technologySpecialistImg.jpg" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>      
+
+          <!-- ---------------------- -->
+          <div class="listing-box-wrapper">
+            <div class="listing-box lisitng-box2" id="listing-box2">
+              <div class="info-div">
+                <article class="listingHeading">Environment Reasercher</article>
+                <p class="listingDescription">
+                    Reaserch about our pride Mount Fuji why CO2 emissions are high and awareness about reckless hikers
+                </p>
+                <div class="listing-buttons">
+                  <a href="" target="_blank" class="cta">
+
+                    <span>Apply</span>
+
+                    <!-- arrow -->
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/environmentResearcherImg.jpeg" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>    
+
+          <!-- ---------------------- -->
+          <div class="listing-box-wrapper">
+            <div class="listing-box lisitng-box2" id="listing-box2">
+              <div class="info-div">
+                <article class="listingHeading">Teacher</article>
+                <p class="listingDescription">
+                    Teacher in a well established Institute to tech Nihongo
+                </p>
+                <div class="listing-buttons">
+                  <a href="" target="_blank" class="cta">
+
+                    <span>Apply</span>
+
+                    <!-- arrow -->
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/teacherImg.jpg" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+
+          <div class="listing-box-wrapper">
+            <div class="listing-box lisitng-box2" id="listing-box2">
+              <div class="info-div">
+                <article class="listingHeading">Banker</article>
+                <p class="listingDescription">
+                  As a banker in Japan, your primary responsibility will be to manage customer accounts, conduct various financial transactions, and provide advisory services to clients.
+                </p>
+                <div class="listing-buttons">
+                  <a href="" target="_blank" class="cta">
+
+                    <span>Apply</span>
+
+                    <!-- arrow -->
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/bankerImg.jpg" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+
+            <div class="formBtn">
+            <button type="submit" class="btn" id="submit-btn">
+              <a id="exploreJobs" href="">Explore More Jobs</a>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main ends here -->
+
+
+
+  <!-- japan culture section start-->
+
+  <!-- <div id="map-container">
+      <div id="map"></div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
+
+  <section class="culture-section-container" id="culture">
+
+    <div class="culture-section-div">
+
+      <main>
+        
+        <!-- content -->
+        <section class="culture-inner-section">
+
+          <!-- heading -->
+          <h2>&#60;/Explore Japan&#62</h2>
+          <!-- about japan -->
+          <p class="text">
+            Nestled in the heart of East Asia, Japan is a captivating archipelago known for its juxtaposition of ancient tradition and modern innovation. With a rich history spanning thousands of years, Japan boasts a cultural tapestry woven with vibrant festivals, intricate arts, and profound philosophies. Its iconic landmarks, from the snow-capped peaks of Mount Fuji to the bustling streets of Tokyo, showcase the country's diverse landscapes and dynamic urban centers.
+            <br /><br />
+            Renowned for its meticulous craftsmanship, culinary excellence, and technological prowess, Japan continues to influence global trends while cherishing its deep-rooted values of harmony, respect, and resilience. Embracing both tradition and progress, Japan invites travelers to embark on a journey of discovery, where the past meets the future in a harmonious blend of old-world charm and cutting-edge innovation.
+
+          </p>
+  
+          <!-- pagoda temple -->
+          <div class="box bg1">
+            <h4>Pagoda Temple</h4>
+          </div>
+          <p class="text">
+            
+            Pagoda temples stand as iconic symbols of spiritual reverence and architectural splendor in Japan. These towering structures, characterized by their tiered roofs and elegant curves, serve as sacred sites for Buddhist worship and contemplation. Dating back centuries, pagodas embody a harmonious fusion of Buddhist principles and traditional Japanese craftsmanship. Each tier of the pagoda represents a different aspect of enlightenment, guiding visitors on a symbolic journey towards spiritual awakening.
+            <br /><br />
+            Surrounded by serene gardens or nestled within temple complexes, pagodas exude a sense of tranquility and reverence, inviting devotees and visitors alike to pause and reflect in their shadow. With their timeless beauty and profound symbolism, pagoda temples stand as enduring testaments to Japan's rich cultural heritage and spiritual legacy.
+          </p>
+
+
+          <!-- tokyo tower -->
+          <div class="box bg2">
+            <h4>Tokyo Tower</h4>
+          </div>
+          <p class="text">
+            Tokyo Tower, an iconic landmark towering over the bustling metropolis of Tokyo, is a beacon of modernity and tradition. Standing at 333 meters tall, this lattice structure showcases Japan's architectural ingenuity and technological prowess. Inspired by the Eiffel Tower, Tokyo Tower boasts a striking orange and white exterior, gleaming against the city skyline by day and illuminated in a kaleidoscope of colors by night.
+            <br /><br />
+            Serving as both a telecommunications hub and a beloved tourist attraction, visitors ascend its observation decks to behold panoramic vistas of the sprawling cityscape below, with landmarks like Mount Fuji and the Tokyo Skytree in view. Tokyo Tower's enduring presence symbolizes Japan's resilience and innovation, while its lofty heights offer a lofty perspective on Tokyo's vibrant culture and dynamic energy.
+          </p>
+  
+
+          <!-- Kimono -->
+          <div class="box bg3">
+            <h4>kimono</h4>
+          </div>
+          <p class="text">
+            The kimono, a traditional Japanese garment, embodies centuries of cultural heritage and timeless elegance. Crafted from exquisite fabrics and adorned with intricate designs, the kimono showcases the artistry and craftsmanship of Japanese textile traditions. With its graceful silhouette and flowing sleeves, the kimono is more than just attire—it's a symbol of grace, beauty, and tradition.
+            <br /><br />
+            Each kimono design carries its own significance, from seasonal motifs to auspicious symbols, reflecting the wearer's identity and occasion. While once worn daily, the kimono is now reserved for special events and ceremonies, preserving its status as a cherished cultural icon. Yet, even as Japan embraces modernity, the allure of the kimono endures, captivating hearts around the world with its timeless charm and unrivaled sophistication.
+          </p>
+
+
+          <!-- shrines -->
+          <div class="box bg4">
+            <h4>Shrines</h4>
+          </div>
+          <p class="text">
+            The kimono, a traditional Japanese garment, embodies centuries of cultural heritage and timeless elegance. Crafted from exquisite fabrics and adorned with intricate designs, the kimono showcases the artistry and craftsmanship of Japanese textile traditions. With its graceful silhouette and flowing sleeves, the kimono is more than just attire—it's a symbol of grace, beauty, and tradition.
+            <br /><br />
+            Each kimono design carries its own significance, from seasonal motifs to auspicious symbols, reflecting the wearer's identity and occasion. While once worn daily, the kimono is now reserved for special events and ceremonies, preserving its status as a cherished cultural icon. Yet, even as Japan embraces modernity, the allure of the kimono endures, captivating hearts around the world with its timeless charm and unrivaled sophistication.
+          </p>
+
+          <!-- mount fuji -->
+          <div class="box bg5">
+            <h4>Mount Fuji</h4>
+          </div>
+          <p class="text">
+            Mount Fuji, Japan's majestic icon, rises with serene grandeur, towering over the landscape as the nation's highest peak at 3,776 meters. Revered as a sacred symbol and UNESCO World Heritage Site, Fuji-san captivates with its symmetrical cone shape and snow-capped summit, inspiring awe and admiration for generations. An active stratovolcano, Mount Fuji embodies both beauty and power, drawing pilgrims, artists, and adventurers alike to its slopes.
+            <br /><br />
+            Each year, thousands embark on the pilgrimage to ascend its heights, seeking spiritual enlightenment and panoramic views of the surrounding countryside. Fuji's allure transcends borders, capturing the imagination of the world and serving as a timeless muse for poets, painters, and photographers. With its timeless grace and profound presence, Mount Fuji stands as a testament to Japan's natural splendor and cultural legacy.
+          </p>
+
+
+        </section>
+      </main>
+    </div>
+  </section>
+
+  <!-- japan culture section ends -->
+
+
+
+  <section class="contactMeSection" id="contactMe">
+    
+    <!-- back to top button -->
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    
+    
+    <!-- contact us section -->
+    <div class="container">
+      <h2>Contact Us</h2>
+      <h3>Questions, Thoughts, Problems, Frauds Or Query about any job?</h3>
+
+      <!-- contact us form -->
+      <div class="contactUsForm">
+        <form  id="myForm">
+          <div class="formFieldContainer">
+            <input class="formField" type="text" name="name"  placeholder="Enter your name" />
+          </div>
+          <div class="formFieldContainer">
+            <input class="formField" type="email"  name="email" placeholder="Enter your email address" />
+          </div>
+          <div class="formFieldContainer">
+            <input class="formField" type="text" name="subject"  placeholder="Enter Subject" />
+          </div>
+          <div class="formFieldContainer">
+            <textarea class="formField" name="message" id="" cols="30" rows="10"
+              placeholder="Enter your message"></textarea>
+          </div>
+          <div class="formBtn">
+            <button type="submit" class="btn" id="submit-btn">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact ends here -->
+
+
+
+  <!-- main script file -->
+  <script src="index.js"></script>
+
+
+  <!-- api for google translate -->
+  <script src="script.js"></script>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+  <!-- script for cursor movements -->
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const cursorOuter2 = document.getElementById("cursor-outer2");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 300, fill: "forwards" }
+      );
+
+      cursorOuter2.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 900, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
